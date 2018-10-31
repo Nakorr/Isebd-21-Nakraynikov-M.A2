@@ -48,6 +48,7 @@
   <ItemGroup>
     <Compile Include="depo.cs" />
     <Compile Include="Iteplohod.cs" />
+    <Compile Include="LevelDepo.cs" />
     <Compile Include="Lokomotiv.cs" />
     <Compile Include="LokomotivTep.cs" />
     <Compile Include="Transport.cs" />

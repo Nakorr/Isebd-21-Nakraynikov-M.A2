@@ -34,11 +34,12 @@ namespace WindowsFormsLab
             this.pictureBoxTeplohod = new System.Windows.Forms.PictureBox();
             this.plusLokomativ = new System.Windows.Forms.Button();
             this.groupBox = new System.Windows.Forms.GroupBox();
+            this.Take = new System.Windows.Forms.Button();
             this.pictureBoxTake = new System.Windows.Forms.PictureBox();
             this.maskedTextBox = new System.Windows.Forms.MaskedTextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.plusTep = new System.Windows.Forms.Button();
-            this.Take = new System.Windows.Forms.Button();
+            this.listBox = new System.Windows.Forms.ListBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxTeplohod)).BeginInit();
             this.groupBox.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxTake)).BeginInit();
@@ -55,7 +56,7 @@ namespace WindowsFormsLab
             // 
             // plusLokomativ
             // 
-            this.plusLokomativ.Location = new System.Drawing.Point(757, 84);
+            this.plusLokomativ.Location = new System.Drawing.Point(757, 210);
             this.plusLokomativ.Name = "plusLokomativ";
             this.plusLokomativ.Size = new System.Drawing.Size(115, 65);
             this.plusLokomativ.TabIndex = 2;
@@ -72,6 +73,16 @@ namespace WindowsFormsLab
             this.groupBox.Size = new System.Drawing.Size(133, 180);
             this.groupBox.TabIndex = 3;
             this.groupBox.TabStop = false;
+            // 
+            // Take
+            // 
+            this.Take.Location = new System.Drawing.Point(25, 76);
+            this.Take.Name = "Take";
+            this.Take.Size = new System.Drawing.Size(75, 23);
+            this.Take.TabIndex = 1;
+            this.Take.Text = "Забрать";
+            this.Take.UseVisualStyleBackColor = true;
+            this.Take.Click += new System.EventHandler(this.Take_Click_1);
             // 
             // pictureBoxTake
             // 
@@ -99,7 +110,7 @@ namespace WindowsFormsLab
             // 
             // plusTep
             // 
-            this.plusTep.Location = new System.Drawing.Point(757, 12);
+            this.plusTep.Location = new System.Drawing.Point(757, 139);
             this.plusTep.Name = "plusTep";
             this.plusTep.Size = new System.Drawing.Size(115, 65);
             this.plusTep.TabIndex = 8;
@@ -107,21 +118,21 @@ namespace WindowsFormsLab
             this.plusTep.UseVisualStyleBackColor = true;
             this.plusTep.Click += new System.EventHandler(this.plusTep_Click);
             // 
-            // Take
+            // listBox
             // 
-            this.Take.Location = new System.Drawing.Point(25, 76);
-            this.Take.Name = "Take";
-            this.Take.Size = new System.Drawing.Size(75, 23);
-            this.Take.TabIndex = 1;
-            this.Take.Text = "Забрать";
-            this.Take.UseVisualStyleBackColor = true;
-            this.Take.Click += new System.EventHandler(this.Take_Click_1);
+            this.listBox.FormattingEnabled = true;
+            this.listBox.Location = new System.Drawing.Point(752, 0);
+            this.listBox.Name = "listBox";
+            this.listBox.Size = new System.Drawing.Size(120, 134);
+            this.listBox.TabIndex = 9;
+            this.listBox.Click += new System.EventHandler(this.listBoxs_SelectedIndexChanged);
             // 
             // FormTeplohod
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(884, 461);
+            this.Controls.Add(this.listBox);
             this.Controls.Add(this.plusTep);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.maskedTextBox);
@@ -149,6 +160,7 @@ namespace WindowsFormsLab
         private PictureBox pictureBoxTake;
         private Button plusTep;
         private Button Take;
+        private ListBox listBox;
     }
 }
 
