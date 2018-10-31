@@ -159,7 +159,7 @@ namespace WindowsFormsLab
             g.FillEllipse(brBlack, _startPosX, _startPosY + 30, 20, 20);
             //Мостик
             br = new SolidBrush(DopColor);
-            g.FillRectangle(br, _startPosX, _startPosY + 30, 90, 8);
+            g.FillRectangle(br, _startPosX, _startPosY + 30, 90, 7);
         }
     }
 }
