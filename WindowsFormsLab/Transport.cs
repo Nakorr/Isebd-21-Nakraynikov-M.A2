@@ -3,7 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.Drawing;
+using System.Drawing;
+
+
 
 namespace WindowsFormsLab
 {
@@ -50,6 +52,7 @@ namespace WindowsFormsLab
             _pictureHeight = height;
         }
         public abstract void DrawTransport(Graphics g);
-        public abstract void MoveTransport(Direction direction);
+        public abstract void MoveTransport(Direction direction);
+
     }
 }

@@ -92,5 +92,6 @@ namespace WindowsFormsLab
             g.FillEllipse(brBlack, _startPosX, _startPosY + 30, 20, 20);
         }
     }
-}
+}
+
                     

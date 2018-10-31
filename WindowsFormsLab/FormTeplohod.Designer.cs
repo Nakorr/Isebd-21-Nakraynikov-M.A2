@@ -31,125 +31,124 @@ namespace WindowsFormsLab
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormTeplohod));
             this.pictureBoxTeplohod = new System.Windows.Forms.PictureBox();
-            this.buttonCreate = new System.Windows.Forms.Button();
-            this.buttonLeft = new System.Windows.Forms.Button();
-            this.buttonDown = new System.Windows.Forms.Button();
-            this.buttonRight = new System.Windows.Forms.Button();
-            this.buttonUp = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.plusLokomativ = new System.Windows.Forms.Button();
+            this.groupBox = new System.Windows.Forms.GroupBox();
+            this.pictureBoxTake = new System.Windows.Forms.PictureBox();
+            this.maskedTextBox = new System.Windows.Forms.MaskedTextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.plusTep = new System.Windows.Forms.Button();
+            this.Take = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxTeplohod)).BeginInit();
+            this.groupBox.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxTake)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBoxTeplohod
             // 
-            this.pictureBoxTeplohod.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBoxTeplohod.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.pictureBoxTeplohod.Location = new System.Drawing.Point(0, 0);
             this.pictureBoxTeplohod.Name = "pictureBoxTeplohod";
-            this.pictureBoxTeplohod.Size = new System.Drawing.Size(884, 461);
+            this.pictureBoxTeplohod.Size = new System.Drawing.Size(750, 461);
             this.pictureBoxTeplohod.TabIndex = 0;
             this.pictureBoxTeplohod.TabStop = false;
-            this.pictureBoxTeplohod.Click += new System.EventHandler(this.pictureBoxTeplohod_Click);
             // 
-            // buttonCreate
+            // plusLokomativ
             // 
-            this.buttonCreate.Location = new System.Drawing.Point(0, 0);
-            this.buttonCreate.Name = "buttonCreate";
-            this.buttonCreate.Size = new System.Drawing.Size(100, 32);
-            this.buttonCreate.TabIndex = 1;
-            this.buttonCreate.Text = "Create Lokomativ";
-            this.buttonCreate.UseVisualStyleBackColor = true;
-            this.buttonCreate.Click += new System.EventHandler(this.buttonCreate_Lokomotiv_Click);
+            this.plusLokomativ.Location = new System.Drawing.Point(757, 84);
+            this.plusLokomativ.Name = "plusLokomativ";
+            this.plusLokomativ.Size = new System.Drawing.Size(115, 65);
+            this.plusLokomativ.TabIndex = 2;
+            this.plusLokomativ.Text = "Припарковать Локоматив";
+            this.plusLokomativ.UseVisualStyleBackColor = true;
+            this.plusLokomativ.Click += new System.EventHandler(this.plusLokomativ_Click);
             // 
-            // buttonLeft
+            // groupBox
             // 
-            this.buttonLeft.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.buttonLeft.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("buttonLeft.BackgroundImage")));
-            this.buttonLeft.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.buttonLeft.Location = new System.Drawing.Point(688, 419);
-            this.buttonLeft.Name = "buttonLeft";
-            this.buttonLeft.Size = new System.Drawing.Size(30, 30);
-            this.buttonLeft.TabIndex = 2;
-            this.buttonLeft.UseVisualStyleBackColor = true;
-            this.buttonLeft.Click += new System.EventHandler(this.buttonMove_Click);
+            this.groupBox.Controls.Add(this.Take);
+            this.groupBox.Controls.Add(this.pictureBoxTake);
+            this.groupBox.Location = new System.Drawing.Point(752, 281);
+            this.groupBox.Name = "groupBox";
+            this.groupBox.Size = new System.Drawing.Size(133, 180);
+            this.groupBox.TabIndex = 3;
+            this.groupBox.TabStop = false;
             // 
-            // buttonDown
+            // pictureBoxTake
             // 
-            this.buttonDown.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.buttonDown.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("buttonDown.BackgroundImage")));
-            this.buttonDown.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.buttonDown.Location = new System.Drawing.Point(724, 419);
-            this.buttonDown.Name = "buttonDown";
-            this.buttonDown.Size = new System.Drawing.Size(30, 30);
-            this.buttonDown.TabIndex = 3;
-            this.buttonDown.UseVisualStyleBackColor = true;
-            this.buttonDown.Click += new System.EventHandler(this.buttonMove_Click);
+            this.pictureBoxTake.Location = new System.Drawing.Point(1, 105);
+            this.pictureBoxTake.Name = "pictureBoxTake";
+            this.pictureBoxTake.Size = new System.Drawing.Size(130, 75);
+            this.pictureBoxTake.TabIndex = 0;
+            this.pictureBoxTake.TabStop = false;
             // 
-            // buttonRight
+            // maskedTextBox
             // 
-            this.buttonRight.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.buttonRight.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("buttonRight.BackgroundImage")));
-            this.buttonRight.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.buttonRight.Location = new System.Drawing.Point(760, 419);
-            this.buttonRight.Name = "buttonRight";
-            this.buttonRight.Size = new System.Drawing.Size(30, 30);
-            this.buttonRight.TabIndex = 4;
-            this.buttonRight.UseVisualStyleBackColor = true;
-            this.buttonRight.Click += new System.EventHandler(this.buttonMove_Click);
+            this.maskedTextBox.Location = new System.Drawing.Point(825, 329);
+            this.maskedTextBox.Name = "maskedTextBox";
+            this.maskedTextBox.Size = new System.Drawing.Size(30, 20);
+            this.maskedTextBox.TabIndex = 4;
             // 
-            // buttonUp
+            // label1
             // 
-            this.buttonUp.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.buttonUp.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("buttonUp.BackgroundImage")));
-            this.buttonUp.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.buttonUp.Location = new System.Drawing.Point(724, 383);
-            this.buttonUp.Name = "buttonUp";
-            this.buttonUp.Size = new System.Drawing.Size(30, 30);
-            this.buttonUp.TabIndex = 5;
-            this.buttonUp.UseVisualStyleBackColor = true;
-            this.buttonUp.Click += new System.EventHandler(this.buttonMove_Click);
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(774, 301);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(98, 13);
+            this.label1.TabIndex = 5;
+            this.label1.Text = "Забрать теплоход";
             // 
-            // button1
+            // plusTep
             // 
-            this.button1.Location = new System.Drawing.Point(115, 0);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(100, 32);
-            this.button1.TabIndex = 6;
-            this.button1.Text = "Create Teplohod";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.buttonCreate_Teplohod_Click);
+            this.plusTep.Location = new System.Drawing.Point(757, 12);
+            this.plusTep.Name = "plusTep";
+            this.plusTep.Size = new System.Drawing.Size(115, 65);
+            this.plusTep.TabIndex = 8;
+            this.plusTep.Text = "Припарковать Теплоход";
+            this.plusTep.UseVisualStyleBackColor = true;
+            this.plusTep.Click += new System.EventHandler(this.plusTep_Click);
+            // 
+            // Take
+            // 
+            this.Take.Location = new System.Drawing.Point(25, 76);
+            this.Take.Name = "Take";
+            this.Take.Size = new System.Drawing.Size(75, 23);
+            this.Take.TabIndex = 1;
+            this.Take.Text = "Забрать";
+            this.Take.UseVisualStyleBackColor = true;
+            this.Take.Click += new System.EventHandler(this.Take_Click_1);
             // 
             // FormTeplohod
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(884, 461);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.buttonUp);
-            this.Controls.Add(this.buttonRight);
-            this.Controls.Add(this.buttonDown);
-            this.Controls.Add(this.buttonLeft);
-            this.Controls.Add(this.buttonCreate);
+            this.Controls.Add(this.plusTep);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.maskedTextBox);
+            this.Controls.Add(this.groupBox);
+            this.Controls.Add(this.plusLokomativ);
             this.Controls.Add(this.pictureBoxTeplohod);
             this.Name = "FormTeplohod";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-            this.Text = "Теплоход";
-            this.Load += new System.EventHandler(this.FormTeplohod_Load);
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Депо";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxTeplohod)).EndInit();
+            this.groupBox.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxTake)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
 
         private System.Windows.Forms.PictureBox pictureBoxTeplohod;
-        private System.Windows.Forms.Button buttonCreate;
-        private System.Windows.Forms.Button buttonLeft;
-        private System.Windows.Forms.Button buttonDown;
-        private System.Windows.Forms.Button buttonRight;
-        private System.Windows.Forms.Button buttonUp;
-        private Button button1;
+        private Button plusLokomativ;
+        private GroupBox groupBox;
+        private MaskedTextBox maskedTextBox;
+        private Label label1;
+        private PictureBox pictureBoxTake;
+        private Button plusTep;
+        private Button Take;
     }
 }
 
