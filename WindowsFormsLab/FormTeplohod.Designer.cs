@@ -32,14 +32,13 @@ namespace WindowsFormsLab
         private void InitializeComponent()
         {
             this.pictureBoxTeplohod = new System.Windows.Forms.PictureBox();
-            this.plusLokomativ = new System.Windows.Forms.Button();
             this.groupBox = new System.Windows.Forms.GroupBox();
             this.Take = new System.Windows.Forms.Button();
             this.pictureBoxTake = new System.Windows.Forms.PictureBox();
             this.maskedTextBox = new System.Windows.Forms.MaskedTextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.plusTep = new System.Windows.Forms.Button();
             this.listBox = new System.Windows.Forms.ListBox();
+            this.buttonSetTep = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxTeplohod)).BeginInit();
             this.groupBox.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxTake)).BeginInit();
@@ -53,16 +52,6 @@ namespace WindowsFormsLab
             this.pictureBoxTeplohod.Size = new System.Drawing.Size(750, 461);
             this.pictureBoxTeplohod.TabIndex = 0;
             this.pictureBoxTeplohod.TabStop = false;
-            // 
-            // plusLokomativ
-            // 
-            this.plusLokomativ.Location = new System.Drawing.Point(757, 210);
-            this.plusLokomativ.Name = "plusLokomativ";
-            this.plusLokomativ.Size = new System.Drawing.Size(115, 65);
-            this.plusLokomativ.TabIndex = 2;
-            this.plusLokomativ.Text = "Припарковать Локоматив";
-            this.plusLokomativ.UseVisualStyleBackColor = true;
-            this.plusLokomativ.Click += new System.EventHandler(this.plusLokomativ_Click);
             // 
             // groupBox
             // 
@@ -108,16 +97,6 @@ namespace WindowsFormsLab
             this.label1.TabIndex = 5;
             this.label1.Text = "Забрать теплоход";
             // 
-            // plusTep
-            // 
-            this.plusTep.Location = new System.Drawing.Point(757, 139);
-            this.plusTep.Name = "plusTep";
-            this.plusTep.Size = new System.Drawing.Size(115, 65);
-            this.plusTep.TabIndex = 8;
-            this.plusTep.Text = "Припарковать Теплоход";
-            this.plusTep.UseVisualStyleBackColor = true;
-            this.plusTep.Click += new System.EventHandler(this.plusTep_Click);
-            // 
             // listBox
             // 
             this.listBox.FormattingEnabled = true;
@@ -127,17 +106,26 @@ namespace WindowsFormsLab
             this.listBox.TabIndex = 9;
             this.listBox.Click += new System.EventHandler(this.listBoxs_SelectedIndexChanged);
             // 
+            // buttonSetTep
+            // 
+            this.buttonSetTep.Location = new System.Drawing.Point(757, 163);
+            this.buttonSetTep.Name = "buttonSetTep";
+            this.buttonSetTep.Size = new System.Drawing.Size(115, 58);
+            this.buttonSetTep.TabIndex = 10;
+            this.buttonSetTep.Text = "Выбрать Вагон";
+            this.buttonSetTep.UseVisualStyleBackColor = true;
+            this.buttonSetTep.Click += new System.EventHandler(this.buttonSetTep_Click);
+            // 
             // FormTeplohod
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(884, 461);
+            this.Controls.Add(this.buttonSetTep);
             this.Controls.Add(this.listBox);
-            this.Controls.Add(this.plusTep);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.maskedTextBox);
             this.Controls.Add(this.groupBox);
-            this.Controls.Add(this.plusLokomativ);
             this.Controls.Add(this.pictureBoxTeplohod);
             this.Name = "FormTeplohod";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -153,14 +141,13 @@ namespace WindowsFormsLab
         #endregion
 
         private System.Windows.Forms.PictureBox pictureBoxTeplohod;
-        private Button plusLokomativ;
         private GroupBox groupBox;
         private MaskedTextBox maskedTextBox;
         private Label label1;
         private PictureBox pictureBoxTake;
-        private Button plusTep;
         private Button Take;
         private ListBox listBox;
+        private Button buttonSetTep;
     }
 }
 

@@ -65,5 +65,12 @@ namespace WindowsFormsLab
             g.FillRectangle(brRed, _startPosX, _startPosY + 30, 90, 8);
 
         }
+        /// Смена дополнительного цвета
+        /// </summary>
+        /// <param name="color"></param>
+        public void SetDopColor(Color color)
+        {
+            DopColor = color;
+        }
     }
 }

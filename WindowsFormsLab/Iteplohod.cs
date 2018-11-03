@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace WindowsFormsLab
 {
-    interface Iteplohod
+  public interface Iteplohod
     {
         /// <summary>
         /// Установка позиции
@@ -17,16 +17,23 @@ namespace WindowsFormsLab
         /// <param name="width">Ширина картинки</param>
         /// <param name="height">Высота картинки</param>
         void SetPosition(int x, int y, int width, int height);
+
         /// <summary>
         /// Изменение направления пермещения
         /// </summary>
         /// <param name="direction">Направление</param>
         void MoveTransport(Direction direction);
+
         /// <summary>
         /// Отрисовка 
         /// </summary>
         /// <param name="g"></param>
         void DrawTransport(Graphics g);
+        /// <summary>
+        /// Смена основного цвета вагона
+        /// </summary>
+        /// <param name="color"></param>
+        void SetMainColor(Color color);
 
     }
 }

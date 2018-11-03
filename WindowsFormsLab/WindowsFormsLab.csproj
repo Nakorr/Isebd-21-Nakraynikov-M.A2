@@ -47,6 +47,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="depo.cs" />
+    <Compile Include="FormTepConfig.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormTepConfig.Designer.cs">
+      <DependentUpon>FormTepConfig.cs</DependentUpon>
+    </Compile>
     <Compile Include="Iteplohod.cs" />
     <Compile Include="LevelDepo.cs" />
     <Compile Include="Lokomotiv.cs" />
@@ -61,6 +67,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FormTepConfig.resx">
+      <DependentUpon>FormTepConfig.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormTeplohod.resx">
       <DependentUpon>FormTeplohod.cs</DependentUpon>
     </EmbeddedResource>

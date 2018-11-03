@@ -6,6 +6,7 @@ using System.Windows.Forms;
 
 namespace WindowsFormsLab
 {
+    public delegate void tepDelegate(Iteplohod tep);
     static class Program
     {
         /// <summary>

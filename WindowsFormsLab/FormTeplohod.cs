@@ -17,6 +17,11 @@ namespace WindowsFormsLab
         /// Объект от класса многоуровневой парковки
         /// </summary>
         LevelDepo parking;
+
+        /// <summary>
+        /// Форма для добавления
+        /// </summary>
+        FormTepConfig form;
         /// <summary>
         /// Количество уровней-парковок
         /// </summary>
@@ -138,5 +143,36 @@ namespace WindowsFormsLab
         {
             Draw();
         }
+
+        /// <summary>
+        /// Обработка нажатия кнопки "Добавить вагон"
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void buttonSetTep_Click(object sender, EventArgs e)
+        {
+            form = new FormTepConfig();
+            form.AddEvent(AddTep);
+            form.Show();
+        }
+        /// <summary>
+        /// Метод добавления вагона
+        /// </summary>
+        /// <param name="car"></param>
+        private void AddTep(Iteplohod car)
+        {
+            if (car != null && listBox.SelectedIndex > -1)
+            {
+                int place = parking[listBox.SelectedIndex] + car;
+                if (place > -1)
+                {
+                    Draw();
+                }
+                else
+                {
+                    MessageBox.Show("Вагон не удалось поставить");
+                }
+            }
+        }
     }
 }
