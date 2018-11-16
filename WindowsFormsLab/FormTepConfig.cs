@@ -33,7 +33,8 @@ namespace WindowsFormsLab
             panelYellow.MouseDown += panelColor_MouseDown;
             panelBlue.MouseDown += panelColor_MouseDown;
             buttonCancel.Click += (object sender, EventArgs e) => { Close(); };
-        }
+        }
+
         /// <summary>
         /// Отрисовать вагон
         /// </summary>
@@ -195,4 +196,4 @@ namespace WindowsFormsLab
             Close();
         }
     }
-}
+}

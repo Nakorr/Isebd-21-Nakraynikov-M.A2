@@ -21,7 +21,8 @@ namespace WindowsFormsLab
         /// <summary>
         /// Форма для добавления
         /// </summary>
-        FormTepConfig form;
+        FormTepConfig form;
+
         /// <summary>
         /// Количество уровней-парковок
         /// </summary>
@@ -173,6 +174,7 @@ namespace WindowsFormsLab
                     MessageBox.Show("Вагон не удалось поставить");
                 }
             }
-        }
+        }
+
     }
 }
