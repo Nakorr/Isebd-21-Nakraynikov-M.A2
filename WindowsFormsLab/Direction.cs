@@ -6,5 +6,11 @@ using System.Threading.Tasks;
 
 namespace WindowsFormsLab
 {
-    public enum Direction { Up,Down,Right,Left}
+    public enum Direction
+    {
+        Up,
+        Down,
+        Left,
+        Right
+    }
 }
