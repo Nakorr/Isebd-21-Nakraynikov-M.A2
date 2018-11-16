@@ -46,8 +46,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
     <Compile Include="depo.cs" />
+    <Compile Include="Direction.cs" />
     <Compile Include="FormTepConfig.cs">
       <SubType>Form</SubType>
     </Compile>

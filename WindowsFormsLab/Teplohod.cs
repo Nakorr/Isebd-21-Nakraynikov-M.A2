@@ -9,13 +9,7 @@ namespace WindowsFormsLab
 {
     class Teplohod
     {
-        public enum Direction
-        {
-            Up,
-            Down,
-            Left,
-            Right
-        }
+
         /// <summary>
         /// Левая координата отрисовки теплохода 
         /// </summary>
