@@ -9,13 +9,7 @@ using System.Drawing;
 
 namespace WindowsFormsLab
 {
-    public enum Direction
-    {
-        Up,
-        Down,
-        Left,
-        Right
-    }
+ 
     public abstract class Transport : Iteplohod
     {
         /// <summary>
