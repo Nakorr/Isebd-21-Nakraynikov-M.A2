@@ -3,7 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.Drawing;
+using System.Drawing;
+
 
 namespace WindowsFormsLab
 {
@@ -46,9 +47,9 @@ namespace WindowsFormsLab
             //Дорисуем трубу
             if (Truba)
             {
-                g.DrawRectangle(pen, _startPosX + 65, _startPosY - 10, 8, 10);
+                g.DrawRectangle(pen, _startPosX + 65, _startPosY - 5, 8, 5);
                 Brush brBlack = new SolidBrush(Color.Black);
-                g.FillRectangle(brBlack, _startPosX + 65, _startPosY - 10, 8, 10);
+                g.FillRectangle(brBlack, _startPosX + 65, _startPosY - 5, 8, 5);
             }
             //Знаки предупреждения
             if (Danger)

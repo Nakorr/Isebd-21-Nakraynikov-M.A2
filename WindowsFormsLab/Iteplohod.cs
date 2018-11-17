@@ -23,9 +23,10 @@ namespace WindowsFormsLab
         /// <param name="direction">Направление</param>
         void MoveTransport(Direction direction);
         /// <summary>
-        /// Отрисовка автомобиля
+        /// Отрисовка 
         /// </summary>
         /// <param name="g"></param>
-        void DrawTransport(Graphics g);
+        void DrawTransport(Graphics g);
+
     }
 }
