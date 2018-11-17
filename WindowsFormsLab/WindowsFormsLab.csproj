@@ -47,10 +47,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Direction.cs" />
-    <Compile Include="Iteplohod.cs" />
-    <Compile Include="Lokomotiv.cs" />
-    <Compile Include="LokomotivTep.cs" />
-    <Compile Include="Transport.cs" />
     <Compile Include="Teplohod.cs" />
     <Compile Include="FormTeplohod.cs">
       <SubType>Form</SubType>
