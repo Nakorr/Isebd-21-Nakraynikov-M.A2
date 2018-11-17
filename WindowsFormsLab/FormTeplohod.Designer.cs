@@ -39,17 +39,24 @@ namespace WindowsFormsLab
             this.label1 = new System.Windows.Forms.Label();
             this.listBox = new System.Windows.Forms.ListBox();
             this.buttonSetTep = new System.Windows.Forms.Button();
+            this.menuStrip = new System.Windows.Forms.MenuStrip();
+            this.файлToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.сохранитьToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.загрузитьToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
+            this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxTeplohod)).BeginInit();
             this.groupBox.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxTake)).BeginInit();
+            this.menuStrip.SuspendLayout();
             this.SuspendLayout();
             // 
             // pictureBoxTeplohod
             // 
             this.pictureBoxTeplohod.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.pictureBoxTeplohod.Location = new System.Drawing.Point(0, 0);
+            this.pictureBoxTeplohod.Location = new System.Drawing.Point(1, 27);
             this.pictureBoxTeplohod.Name = "pictureBoxTeplohod";
-            this.pictureBoxTeplohod.Size = new System.Drawing.Size(750, 461);
+            this.pictureBoxTeplohod.Size = new System.Drawing.Size(750, 434);
             this.pictureBoxTeplohod.TabIndex = 0;
             this.pictureBoxTeplohod.TabStop = false;
             // 
@@ -100,7 +107,7 @@ namespace WindowsFormsLab
             // listBox
             // 
             this.listBox.FormattingEnabled = true;
-            this.listBox.Location = new System.Drawing.Point(752, 0);
+            this.listBox.Location = new System.Drawing.Point(757, 62);
             this.listBox.Name = "listBox";
             this.listBox.Size = new System.Drawing.Size(120, 134);
             this.listBox.TabIndex = 9;
@@ -108,7 +115,7 @@ namespace WindowsFormsLab
             // 
             // buttonSetTep
             // 
-            this.buttonSetTep.Location = new System.Drawing.Point(757, 163);
+            this.buttonSetTep.Location = new System.Drawing.Point(757, 202);
             this.buttonSetTep.Name = "buttonSetTep";
             this.buttonSetTep.Size = new System.Drawing.Size(115, 58);
             this.buttonSetTep.TabIndex = 10;
@@ -116,23 +123,70 @@ namespace WindowsFormsLab
             this.buttonSetTep.UseVisualStyleBackColor = true;
             this.buttonSetTep.Click += new System.EventHandler(this.buttonSetTep_Click);
             // 
+            // menuStrip
+            // 
+            this.menuStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.файлToolStripMenuItem});
+            this.menuStrip.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip.Name = "menuStrip";
+            this.menuStrip.Size = new System.Drawing.Size(884, 24);
+            this.menuStrip.TabIndex = 11;
+            this.menuStrip.Text = "menuStrip";
+            this.menuStrip.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.menuStrip1_ItemClicked);
+            // 
+            // файлToolStripMenuItem
+            // 
+            this.файлToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.сохранитьToolStripMenuItem,
+            this.загрузитьToolStripMenuItem});
+            this.файлToolStripMenuItem.Name = "файлToolStripMenuItem";
+            this.файлToolStripMenuItem.Size = new System.Drawing.Size(48, 20);
+            this.файлToolStripMenuItem.Text = "Файл";
+            // 
+            // сохранитьToolStripMenuItem
+            // 
+            this.сохранитьToolStripMenuItem.Name = "сохранитьToolStripMenuItem";
+            this.сохранитьToolStripMenuItem.Size = new System.Drawing.Size(132, 22);
+            this.сохранитьToolStripMenuItem.Text = "Сохранить";
+            this.сохранитьToolStripMenuItem.Click += new System.EventHandler(this.сохранитьToolStripMenuItem_Click);
+            // 
+            // загрузитьToolStripMenuItem
+            // 
+            this.загрузитьToolStripMenuItem.Name = "загрузитьToolStripMenuItem";
+            this.загрузитьToolStripMenuItem.Size = new System.Drawing.Size(132, 22);
+            this.загрузитьToolStripMenuItem.Text = "Загрузить";
+            this.загрузитьToolStripMenuItem.Click += new System.EventHandler(this.загрузитьToolStripMenuItem_Click);
+            // 
+            // saveFileDialog1
+            // 
+            this.saveFileDialog1.Filter = "txt file | *.txt";
+            // 
+            // openFileDialog1
+            // 
+            this.openFileDialog1.FileName = "openFileDialog1";
+            this.openFileDialog1.Filter = "txt file | *.txt";
+            // 
             // FormTeplohod
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(884, 461);
+            this.Controls.Add(this.pictureBoxTeplohod);
             this.Controls.Add(this.buttonSetTep);
             this.Controls.Add(this.listBox);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.maskedTextBox);
             this.Controls.Add(this.groupBox);
-            this.Controls.Add(this.pictureBoxTeplohod);
+            this.Controls.Add(this.menuStrip);
+            this.MainMenuStrip = this.menuStrip;
             this.Name = "FormTeplohod";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Депо";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxTeplohod)).EndInit();
             this.groupBox.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxTake)).EndInit();
+            this.menuStrip.ResumeLayout(false);
+            this.menuStrip.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -148,6 +202,12 @@ namespace WindowsFormsLab
         private Button Take;
         private ListBox listBox;
         private Button buttonSetTep;
+        private MenuStrip menuStrip;
+        private ToolStripMenuItem файлToolStripMenuItem;
+        private ToolStripMenuItem сохранитьToolStripMenuItem;
+        private ToolStripMenuItem загрузитьToolStripMenuItem;
+        private SaveFileDialog saveFileDialog1;
+        private OpenFileDialog openFileDialog1;
     }
 }
 
