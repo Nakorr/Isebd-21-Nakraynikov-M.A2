@@ -19,10 +19,6 @@ namespace WindowsFormsLab
             InitializeComponent();
         }
 
-        private void FormTeplohod_Load(object sender, EventArgs e)
-        {
-
-        }
         /// Метод отрисовки машины
         /// </summary>
         private void Draw()

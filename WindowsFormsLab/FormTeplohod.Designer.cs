@@ -119,7 +119,7 @@
             this.Name = "FormTeplohod";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Теплоход";
-            this.Load += new System.EventHandler(this.FormTeplohod_Load);
+//            this.Load += new System.EventHandler(this.FormTeplohod_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxTeplohod)).EndInit();
             this.ResumeLayout(false);
 
